@@ -1,13 +1,380 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="zh">
 <head>
-	<meta charset="utf-8">
-	<title>标题</title>
-	<meta name="keywords" content="">
-	<meta name="description" content="">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>仿迅雷响应式轮播图</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/nheader.css">
+	<link rel="stylesheet" href="css/nstyle.css">
 </head>
 <body>
-	<span>喜欢</span>
+	<div class="header">
+		<ul class="nav_list">
+			<li class="nav_li">
+				<a href="javascript:;" class="btn_nav" id="nav_more"><i class="ic_more png"></i>导航</a>
+				<div class="more_nav" id="more_nav">
+					<!--[if lt IE 9]>
+						<span class="opc_bg"></span>
+					<![endif]-->
+					<i class="ic_bdot png" id="h_bdot"></i>
+					<ul id="h_nav">
+						<li><a href="#" class="btn_snav">我，宇</a></li>
+						<li><a href="#" class="btn_snav">慢生活</a></li>
+						<li><a href="#" class="btn_snav">学无止境</a></li>
+						<li><a href="#" class="btn_snav">项目经验</a></li>
+						<li><a href="#" class="btn_snav">我，宇</a></li>
+						<li>
+							<i class="ic_sdot png" id="h_sdot"></i>
+							<dl class="sub_nav" id="h_subnav">
+								<dt><a href="#" class="btn_snav">我，宇</a></dt>
+								<dd><a href="#">我，宇</a></dd>
+								<dd><a href="#">我，宇</a></dd>
+								<dd><a href="#">我，宇</a></dd>
+								<dd><a href="#">我，宇</a></dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="wrap" id="wrap">
+		<div class="wrapper">
+			<div class="product_list" id="product_list">
+				<div class="product_box shoulei show">
+					<div class="bg_box"><img src="img/bg_shoulei.jpg"></div>
+					<div class="content">
+						<div class="main_box">
+							<h2 class="hide_txt  png">
+								<span class="txt_1 png">炽</span>
+								<span class="txt_2 png">热</span>
+								<span class="txt_3 png">追</span>
+								<span class="txt_4 png">求</span>
+								<span class="txt_5 png">之</span>
+								<span class="txt_6 png">心</span>
+								<span class="txt_7 png">没</span>
+								<span class="txt_8 png">有</span>
+								<span class="txt_9 png">什么</span>
+								<span class="txt_10 png">能</span>
+								<span class="txt_11 png">够</span>
+								<span class="txt_12 png">阻</span>
+								<span class="txt_13 png">挡</span>
+							</h2>
+							<a href="#"  class="btn_product" title="勇往直前">勇往直前</a>
+						</div>
+					</div>
+				</div>
+				<div class="product_box xnet">
+					<div class="bg_box"><img src="img/bg_xnet.jpg"></div>
+					<div class="content">
+						<div class="main_box">
+							<h2 class="hide_txt  png">
+								<span class="txt_1 png">自</span>
+								<span class="txt_2 png">己</span>
+								<span class="txt_3 png">不</span>
+								<span class="txt_4 png">止</span>
+								<span class="txt_5 png">一</span>
+								<span class="txt_6 png">次</span>
+								<span class="txt_7 png">的</span>
+								<span class="txt_8 png">挑</span>
+								<span class="txt_9 png">战</span>
+							</h2>
+							<a href="#" class="btn_product" title="坚持">坚持</a>
+						</div>
+					</div>
+				</div>
+				<div class="product_box member">
+					<div class="bg_box"><img src="img/bg_member.jpg"></div>
+					<div class="content">
+						<div class="main_box">
+							<h2 class="hide_txt  png">
+								<span class="txt_1 png">快</span>
+								<span class="txt_2 png">让</span>
+								<span class="txt_3 png">生</span>
+								<span class="txt_4 png">活</span>
+								<span class="txt_5 png">慢</span>
+								<span class="txt_6 png">下</span>
+								<span class="txt_7 png">来</span>
+							</h2>
+							<a href="#" class="btn_product" title="享受生活">享受生活</a>
+						</div>
+					</div>
+				</div>
+				<div class="product_box xkn">
+					<div class="bg_box"><img src="img/bg_xkn.jpg"></div>
+					<div class="content">
+						<div class="main_box">
+							<h2 class="hide_txt png">
+								<span class="txt_1 png">I</span>
+								<span class="txt_2 png">T</span>
+								<span class="txt_3 png">你</span>
+								<span class="txt_4 png">我</span>
+								<span class="txt_5 png">相</span>
+								<span class="txt_6 png">依</span>
+								<span class="txt_7 png">！</span>
+								<span class="txt_8 png">！</span>
+								<span class="txt_9 png">！</span>
+							</h2>
+							<a href="#" class="btn_product" title="我，宇">我，宇</a>
+						</div>
+					</div>
+				</div>
+				<div class="product_box xav">
+					<div class="bg_box"><img src="img/bg_xav.jpg"></div>
+					<div class="content">
+						<div class="main_box">
+							<h4 class="hide_txt png">
+								<span class="txt_1 png">此</span>
+								<span class="txt_2 png">生</span>
+								<span class="txt_3 png">不</span>
+								<span class="txt_4 png">学</span>
+								<span class="txt_5 png">，</span>
+								<span class="txt_6 png">一</span>
+								<span class="txt_7 png">可</span>
+								<span class="txt_8 png">惜</span>
+							</h4>
+							<h3 class="hide_txt png">
+								<span class="txt_1 png">此</span>
+								<span class="txt_2 png">日</span>
+								<span class="txt_3 png">闲</span>
+								<span class="txt_4 png">过</span>
+								<span class="txt_5 png">，</span>
+								<span class="txt_6 png">二</span>
+								<span class="txt_7 png">可</span>
+								<span class="txt_8 png">惜</span>
+							</h3>
+							<h2 class="hide_txt png">
+								<span class="txt_1 png">此</span>
+								<span class="txt_2 png">身</span>
+								<span class="txt_3 png">一</span>
+								<span class="txt_4 png">败</span>
+								<span class="txt_5 png">，</span>
+								<span class="txt_6 png">三</span>
+								<span class="txt_7 png">可</span>
+								<span class="txt_8 png">惜</span>
+							</h2>
+							<a href="#" class="btn_product" title="君子三惜">君子三惜</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="product_btns" id="product_btns">
+				<div class="content">
+					<div class="btns_area">
+						<div class="btns_box" id="control_box">
+							<a href="#" class="btn_ipr btn_shoulei cur" title="迅雷素材" ><span class="ic_shoulei hide_txt png">手机迅雷</span></a>
+							<a href="#" class="btn_xnet" title="迅雷7.9"><span class="ic_xnet hide_txt png">迅雷7.9</span></a>
+							<a href="#" class="btn_member" title="迅雷会员"><span class="ic_member hide_txt png">迅雷会员</span></a>
+							<a href="#" class="btn_xkn" title="迅雷快鸟"><span class="ic_xkn hide_txt png">迅雷快鸟</span></a>
+							<a href="#" class="btn_xav" title="迅雷影音"><span class="ic_xav hide_txt png">迅雷影音</span></a>
+							<span class="ic_line" id="ic_line"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="rpt_bg png" id="rpt_bg"></div>
+		</div>
+	</div>
 	
+	<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	  (function(){
+	    var $wrap=$("#wrap"),
+	        $pages=$("#product_list").find(".product_box"),
+	        $controlBox=$("#control_box"),
+	        $productBtns=$("#product_btns"),
+	        $controls=$controlBox.find("a"),
+	        $icLine=$("#ic_line"),
+	        $listTops=$("#list_top").find("li"),
+	        $hNav=$("#h_nav"),
+	        $hNavli=$hNav.find("li"),
+	        $hSubnav=$("#h_subnav"),
+	        $hSubDD=$hSubnav.find("dd"),
+	        $hBdot=$("#h_bdot"),
+	        $hSdot=$("#h_sdot"),
+	        $footer=$("#footer"),
+	        $bgs=$pages.find(".bg_box img"),
+	        $mainBoxs=$pages.find(".main_box"),
+	        $moreNav=$("#more_nav"),
+	        $rptBg=$("#rpt_bg");
+	    var data={
+	        pLength:$pages.length,
+	        curP:0,
+	        isCan:true,
+	        isOnbtn:false,
+	        fColor:[2,2,1,1,1],
+	        dur: 3500,
+	        cNum:0
+	    };
+	    var aDD=$controls.eq(0).width()+parseInt($controls.eq(0).css("margin-right").slice(0,-2))*2;
+	    var cId;
+	    var isCss3=function(){
+	      var style=document.createElement("div").style;
+	        for(var k in style){
+	          if(k.toLowerCase().indexOf("animation")>0){
+	            return true;
+	          }
+	         }
+	         return false;
+	    }();
+	    var isIE6=navigator.userAgent.indexOf("MSIE 6.0") > 0;
+	    //页面自缩放
+	    var resize=function(){
+	      var w=$(window).width(),
+	          h=$(window).height();
+	      $wrap.height(h);
+	      $moreNav.height(h);
+	      if(w/h<1920/1080){
+	        $bgs.height(h).css({width:"auto",margin:-.5*h+"px 0 0 "+-.5*1920/1080*h+"px"});
+	      }else{
+	        $bgs.width(w).css({height:"auto",margin:-.5*w*1080/1920+"px 0 0 "+-.5*w+"px"});
+	      }
+	      var imgH=$bgs.height();
+	      $mainBoxs.height(imgH).css("margin-top",-.5*imgH+"px");
+	      var cls;
+	      if(isCss3){
+	        document.getElementById("wrap").className="wrap big_view xbig";
+	        switch(true){
+	          case w>=1920:{cls="";break;}
+	          case w<1920&&w>=1680:{cls="small9";break;}
+	          case w<1680&&w>=1600:{cls="small8";break;}
+	          case w<1600&&w>=1536:{cls="small7";break;}
+	          case w<1536&&w>=1440:{cls="small6";break;}
+	          case w<1440&&w>=1366:{cls="small5";break;}
+	          case w<1366&&w>=1280:{cls="small4";break;}
+	          case w<1280&&w>=1024:{cls="small3";break;}
+	          case w<1024:{cls="small2";break;}
+	        }
+	        for(var i=0;i<data.pLength;i++){
+	          $pages.eq(i).find(".content").attr("class","content "+cls);
+	        }
+	        $productBtns.find(".content").attr("class","content "+cls);
+	      }else{
+	        switch(true){
+	          case w>=1600:{cls="big_view";break;}
+	          case w<1600&&w>=1440:{cls="mid_view";break;}
+	          case w<1440:{cls="small_view";break;}
+	        }
+	        var ws=$wrap[0].className;
+	        if(isIE6&&(ws.indexOf("big")!=-1||ws.indexOf("mid")!=-1||ws.indexOf("small")!=-1)&&ws.indexOf(cls)==-1)
+	          location.reload();
+	        wrap.className="wrap "+cls;
+	      }
+	      aDD=$controls.eq(0).width()+parseInt($controls.eq(0).css("margin-right").slice(0,-2))*2;
+	    };
+	    $(window).resize(resize);
+	    resize();
+
+	    var pageChange=function(idx){
+	      if(data.isOnbtn)
+	        return;
+	      if(idx>=-1&&idx<data.pLength&&idx!=data.curP&&data.isCan){
+	      data.isCan=false;
+	        data.cNum++;
+	        clearInterval(cId);
+	        idx=idx==-1?data.pLength-1:idx;
+	        $controls.removeClass("cur").eq(idx).addClass("cur");
+	        $pages.eq(data.curP).css({zIndex:0});
+	        $icLine.css({left:aDD*idx});
+	       // $footer.attr("class","footer f_color"+data.fColor[idx]);
+	        $pages.eq(idx).addClass("show").css({opacity:0,zIndex:1}).animate({opacity:1},400,function(){
+	          $pages.eq(data.curP).removeClass("show");
+	          $(this).addClass("show");
+	          data.isCan=true;
+	          data.curP=idx;
+	          data.cNum--;
+	          if(data.cNum==0){
+	            cId=setInterval(function(){
+	              pageChange((data.curP+1)%data.pLength);
+	            },data.dur);
+	          }
+	        });
+	      }
+	    }
+	    $controls.on("mouseenter",function(){
+	      data.isCan=true;
+	      pageChange($controls.index(this));
+	      $icLine.css({left:aDD*$controls.index(this)});
+	      data.isOnbtn=true;
+	    });
+	    $controls.on("mouseleave",function(){
+	      data.isOnbtn=false;
+	    });
+
+	    var isBottom=false;
+	    var bAni;
+	    var bottomHide=function(){
+	      if(isBottom){
+	        isBottom=false;
+	        if(bAni)
+	          clearTimeout(bAni),bAni=null;
+	        $footer.removeClass("show");
+	        $productBtns.removeClass("show");
+	        $rptBg.removeClass("show");
+	      }
+	    }
+	    var bottomShow=function(){
+	      if(!isBottom){
+	        isBottom=true;
+	        $footer.addClass("show");
+	        $productBtns.addClass("show");
+	        $rptBg.addClass("show");
+	        if(bAni)
+	          clearTimeout(bAni);
+	        bAni=setTimeout(bottomHide,2000);
+	      }
+	    }
+	    $footer.on("mouseenter",function(){
+	      if(bAni)
+	        clearTimeout(bAni),bAni=null;
+	    });
+	    $footer.on("mouseleave",function(){
+	      if(bAni)
+	        clearTimeout(bAni);
+	      bAni=setTimeout(bottomHide,2000);
+	    });
+	    $(document).on("mousewheel DOMMouseScroll",function(event){
+	      var sd=event.originalEvent.wheelDelta||event.originalEvent.detail*-1;
+	      if(sd>0){
+	        bottomHide();
+	      }
+	      else{
+	        bottomShow();
+	      }
+	    });
+	    cId=setInterval(function(){
+	      pageChange((data.curP+1)%data.pLength);
+	    },data.dur);
+
+	    //导航事件
+
+	    $("#nav_more").on("mouseenter",function(){
+	      $moreNav.addClass("show");
+	    });
+	    $moreNav.on("mouseleave",function(){
+	      $moreNav.removeClass("show");
+	      $hBdot.css({left:-9999,top:106});
+	    })
+	    $hNavli.on("mouseenter",function(){
+	      $hBdot.css({left:18,top:106+$hNavli.index(this)*69});
+	    });
+	    $hNav.on("mouseleave",function(){
+	      $hBdot.css({left:-9999});
+	    });
+	    $hSubnav.find("dt").on("mouseenter",function(){
+	      $hBdot.css({left:18});
+	      $hSdot.css({left:-9999});
+	    });
+	    $hSubDD.on("mouseenter",function(){
+	      $hSdot.css({left:18,top:53+$hSubDD.index(this)*44});
+	      $hBdot.css({left:-9999});
+	    });
+	    $hSubnav.on("mouseleave",function(){
+	      $hSdot.css({left:-9999});
+	    });
+	  })();
+	</script>
 </body>
 </html>
