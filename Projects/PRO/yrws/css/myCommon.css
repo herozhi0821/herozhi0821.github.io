@@ -1,0 +1,172 @@
+
+#wrap{
+	background-color: #f0efed;
+}
+#top{
+	width: 7.3rem;
+	height: 0.88rem;
+	background-color: #F8C5D3;
+	color: #FFFFFF;
+	padding: 0 0.2rem;
+	padding-right: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+#top *{
+	float: left;
+}
+#prev{
+	margin-top: 0.25rem;
+	width: 0.28rem;
+	height: 0.38rem;
+	margin-right: 2.59rem;
+}
+#top_text{
+	font-size: 0.34rem;
+	line-height: 0.88rem;
+	margin-right: 2.5rem;
+}
+.myCommon{
+	padding: 0.25rem 0.2rem 0.2rem 0.22rem;
+	height: 1.69rem;
+}
+.myOrder{
+	padding: 0.25rem 0.2rem 0.2rem 0.22rem;
+	height: 1.69rem;
+}
+.swiper-container{
+	padding-top: 0.88rem;
+}
+.swiper-wrapper{
+	width: 7.5rem;
+}
+.swiper-slide li{
+	margin-top: 0.12rem;
+	background-color: white;
+}
+.pagination{
+	padding-top: 0.07rem;
+	overflow: hidden;
+	background-color: white;
+	height: 0.57rem;
+}
+.pagination li{
+	float: left;
+	width: 3.74rem;
+	background-color: white;
+	height: 0.5rem;
+	color: black;
+	font-size: 0.24rem;
+	line-height: 0.5rem;
+	text-align: center;
+	overflow: hidden;
+}
+#pagination1{
+	border-right: 0.02rem solid #f0efed;
+}
+#common1{
+	font-size: 0.4rem;
+}
+.person_info{
+	float: left;
+	margin-right: 0.32rem;
+}
+.con_info{
+	position: relative;
+	float: left;
+	margin-bottom: 0.1rem;
+	background-color: white;
+	height: 2.9rem;
+	width: 7.1rem;
+	padding: 0.25rem 0.20rem 0.20rem 0.20rem;
+}
+.info_img{
+	width: 1.26rem;
+	height: 1.26rem;
+	position: relative;
+	background-image: url("../images/banner.png");
+	background-size: cover;
+	border-radius: 50%;
+}
+.info_bot{
+	padding-left: 0.1rem;
+	margin-top: 0.21rem;
+	overflow: hidden;
+}
+.info_sex{
+	background-image: url("../images/sex.png");
+	width: 0.12rem;
+	height: 0.17rem;
+	background-size: cover;
+	float: left;
+	margin-top: 0.05rem;
+	margin-right: 0.08rem;
+}
+.info_name{
+	font-size: 0.18rem;
+	color: #000000;
+	float: left;
+}
+.detail_info{
+	float: left;
+}
+.detail_info_list{
+	margin-left: -0.12rem;
+}
+.detail_info_list li{
+	background: url("../images/listStyle.png") no-repeat left center;
+	background-size: 0.08rem 0.08rem;
+	padding-left: 0.12rem;
+}
+.detail_info h1{
+	font-size: 0.24rem;
+	color: #000000;
+	margin-bottom: 0.32rem;
+}
+.detail_info_first{
+	font-size: 0.18rem;
+	color: #000000;
+	margin-bottom: 0.18rem;
+}
+.detail_info_second{
+	font-size: 0.18rem;
+	color: #CBCBCB;
+	margin-bottom: 0.18rem;
+}
+.detail_info_third{
+	font-size: 0.18rem;
+	color: #CBCBCB;
+}
+.info_top{
+	overflow: hidden;
+	display: inline-block;
+	float: left;
+}
+.controll{
+	float: right;
+}
+.manage{
+	font-size: 0.22rem;
+	background-color: #f8c3d2;
+	color: white;
+	width: 1.16rem;
+	height: 0.48rem;
+	line-height: 0.48rem;
+	text-align: center;
+	border-radius: 0.09rem;
+	margin-top: 0.2rem;
+}
+.state{
+	margin-top: 0.5rem;
+	font-size: 0.24rem;
+	color: black;
+	width: 1.16rem;
+	height: 0.48rem;
+	line-height: 0.48rem;
+	text-align: center;
+}
+#wrap .onShow{
+	color: #f8c3d2;
+}

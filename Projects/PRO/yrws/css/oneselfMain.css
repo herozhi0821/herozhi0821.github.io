@@ -1,0 +1,87 @@
+/*#wrap{
+	background-color: #f0efed;
+}*/
+#header{
+	width: 7.5rem;
+	height: 0.88rem;
+	background-color: #e9c58c;
+	color: #FFFFFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	font-size: 0.34rem;
+	text-align: center;
+	line-height: 0.88rem;
+	overflow: hidden;
+}
+#header *{
+	float: left;
+}
+#header #header_left {
+	width: 0.8rem;
+	height: 0.88rem;
+	position: absolute;
+	top: 0rem;
+	left:0rem;
+}
+#prev{
+	width: 0.28rem;
+	height: 0.38rem;
+	margin:0.25rem 0 0 0.2rem;
+}
+#content{
+	padding-top: 0.88rem;
+	overflow: hidden;
+}
+.con{
+	width: 7.5rem;
+	height: 2.9rem;
+	background: #eaeaea;
+}
+#content .con img{
+	width: 1.13rem;
+	height: 1.13rem;
+	float: left;
+	margin:0.28rem 0 0 0.21rem;
+}
+.con .con_left{
+	float: left;
+	margin-left: 0.4rem;
+}
+.con_left p{
+	margin-top: 0.24rem;
+	font-size: 0.22rem;
+}
+#content .con_left p:nth-child(1){
+	margin-top: 0.65rem;
+	padding-left:0.22rem ;
+	background: url(../images/sex.png) 0 0.06rem no-repeat;
+	background-size:0.17rem 0.23rem ;
+}
+#content .con_left p:nth-child(2){
+	padding-left:0.22rem ;
+	background: url(../images/location.png) 0 0 no-repeat;
+	background-size:0.2rem 0.27rem ;
+}
+.con2 li{
+	font-size: 0.22rem;
+	height: 0.96rem;
+	line-height: 0.96rem;
+	border-bottom: 1px solid #eeece8;
+}
+.con2 li a{
+	float: left;
+	width: 7.5rem;
+	height: 0.96rem;
+}
+.con2 li a span {
+	margin-left: 0.52rem;
+}
+.con2 li a img {
+	width: 0.19rem;
+	height: 0.28rem;
+	float: right;
+	margin-right: 0.34rem;
+	margin-top: 0.37rem;
+}

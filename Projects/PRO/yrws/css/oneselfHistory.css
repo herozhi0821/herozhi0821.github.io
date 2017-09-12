@@ -1,0 +1,70 @@
+#wrap{
+	background-color: #f0efed;
+}
+#header{
+	width: 7.5rem;
+	height: 0.88rem;
+	background-color: #e9c58c;
+	color: #FFFFFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	font-size: 0.34rem;
+	text-align: center;
+	line-height: 0.88rem;
+	overflow: hidden;
+}
+#header *{
+	float: left;
+}
+#header #header_left {
+	width: 0.8rem;
+	height: 0.88rem;
+	position: absolute;
+	top: 0rem;
+	left:0rem;
+}
+#prev{
+	width: 0.28rem;
+	height: 0.38rem;
+	margin:0.25rem 0 0 0.2rem;
+}
+#content{
+	padding-top: 0.88rem;
+	overflow: hidden;
+}
+#content li {
+	height: 1.2rem;
+	background: #fff;
+	margin-bottom: 0.2rem;
+}
+#content li img {
+	width: 0.96rem;
+	height: 0.97rem;
+	margin:0.15rem 0 0 0.12rem;
+	float: left;
+}
+#content li .con_left{
+	float: left;
+	font-size: 0.24rem ;	
+}
+#content li .con_left p:nth-child(1){
+	margin-top: 0.22rem;
+	padding-left:0.22rem ;
+	background: url(../images/sex.png) 0 0.06rem no-repeat;
+	background-size:0.17rem 0.23rem ;
+	margin-left: 0.1rem;
+}
+#content li .con_left p:nth-child(2){
+	margin-top: 0.22rem;
+	color: #868686;
+	margin-left: 0.18rem;
+}
+#content li span{
+	font-size: 0.24rem;
+	float: right;
+	margin-top: 0.14rem;
+	margin-right: 0.17rem;
+	color: #868686;
+}

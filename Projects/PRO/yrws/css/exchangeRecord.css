@@ -1,0 +1,76 @@
+#wrap{
+	background-color: #f0efed;
+}
+#header{
+	width: 7.5rem;
+	height: 0.88rem;
+	background-color: #f9c8a7;
+	color: #FFFFFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	font-size: 0.34rem;
+	text-align: center;
+	line-height: 0.88rem;
+	overflow: hidden;
+}
+#header *{
+	float: left;
+}
+#header a {
+	width: 0.8rem;
+	height: 0.88rem;
+	position: absolute;
+	top: 0rem;
+	left:0rem;
+}
+#prev{
+	width: 0.28rem;
+	height: 0.38rem;
+	margin:0.25rem 0 0 0.2rem;
+}
+
+#content{
+	padding-top: 0.88rem;
+}
+.infos div{
+	float: left;
+}
+.infos{
+	height: 2.8rem;
+	overflow: hidden;
+	background-color: white;
+	border-bottom: 1px solid #b5b5b5;
+}
+.infoImg{
+	width: 2.44rem;
+	height: 100%;
+}
+.infoText{
+	padding-top: 0.4rem;
+	width: 4.8rem;
+}
+.infoText h1{
+	font-size: 0.24rem;
+	color: black;
+	text-align: left;
+}
+.infoText h2{
+	font-size: 0.2rem;
+	padding-right: 0.75rem;
+	color: #848484;
+	text-align: left;
+	margin-top: 0.1rem;
+	line-height: 0.4rem;
+}
+.infoText h3{
+	font-size: 0.2rem;
+	color: black;
+	text-align: right;
+}
+.infoText h3 var{
+	font-size: 0.2rem;
+	color: #fa893d;
+	text-align: right;
+}

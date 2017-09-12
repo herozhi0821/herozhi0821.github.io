@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>粤人无数</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="../../css/reset.css">
+	<link rel="stylesheet" href="../../css/pub.css">
+	<link rel="stylesheet" href="../../css/sharePublish.css">
+	<script type="text/javascript" src="../../js/suit.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+			<a id="header_left" href="./shareMain.html"><img id="prev" src="../../images/prev.png"></img></a>			
+			粤人分享
+		</div>
+		<div id="content">
+			<textarea id="content_text">说点什么吧...</textarea>
+			<div id="content_bottom">
+				<div class="bitmap"></div>
+				<div class="bottom_text">(最多添加9张图片)</div>
+			</div>
+		</div>
+		<div id="loc">地点</div>
+		<div id="publishBTN">发布</div>
+	</div>
+<script src="../../js/jquery.js"></script>
+<script>
+	
+	$("#publishBTN").on("click",function (){
+		self.location='./shareMain.html';
+	})
+</script>
+</body>
+</html>

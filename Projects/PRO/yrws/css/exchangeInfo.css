@@ -1,0 +1,122 @@
+#wrap{
+	background-color: #f0efed;
+}
+#header{
+	width: 7.5rem;
+	height: 0.88rem;
+	background-color: #f9c8a7;
+	color: #FFFFFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	font-size: 0.34rem;
+	text-align: center;
+	line-height: 0.88rem;
+	overflow: hidden;
+}
+#header *{
+	float: left;
+}
+#header a {
+	width: 0.8rem;
+	height: 0.88rem;
+	position: absolute;
+	top: 0rem;
+	left:0rem;
+}
+#prev{
+	width: 0.28rem;
+	height: 0.38rem;
+	margin:0.25rem 0 0 0.2rem;
+}
+#content{
+	padding-top: 0.88rem;
+}
+#banner{
+	background-image: url("../images/banner.png");
+	height: 2.65rem;
+	width: 100%;
+	background-size: cover;
+}
+#exchange{
+	padding: 0.2rem 0.18rem;
+	overflow: hidden;
+	height: 0.47rem;
+	background-color: white;
+	display: block;
+}
+#cost{
+	float: left;
+	font-size: 0.28rem;
+	color: #ffa96f;
+	margin-left: 0.12rem;
+	background: url("../images/money_color.png") right center no-repeat;
+	background-size: 0.2rem 0.2rem;
+	padding-right: 0.3rem;
+}
+#costBTN{
+	float: right;
+	height: 0.43rem;
+	font-size: 0.24rem;
+	color: white;
+	width: 1.4rem;
+	text-align: center;
+	line-height: 0.43rem;
+	background-color: #f9c8a7;
+	border-radius: 0.09rem;
+}
+#goodsInfo{
+	padding: 0.15rem 0.27rem;
+	background-color: white;
+	height: 8.6rem;
+}
+#goodsInfo h1{
+	font-size: 0.24rem;
+	color: black;
+	font-weight: bold;
+	margin-bottom: 0.35rem;
+}
+#goodsInfo h2{
+	font-size: 0.24rem;
+	color: #010101;
+	font-weight: bold;
+	margin-bottom: 0.35rem;
+}
+#goodsInfo h3{
+	font-size: 0.24rem;
+	color: black;
+	line-height: 0.4rem;
+}
+#goodsInfo h3{
+	font-size: 0.24rem;
+	color: #010101;
+	font-weight: bold;
+}
+#goodsInfo h4{
+	font-size: 0.24rem;
+	color: #010101;
+	font-weight: bold;
+}
+#goodsImg{
+	height: 3.3rem;
+}
+#tel{
+	margin-top: 0.5rem;
+}
+#bottom{
+	border-top: 0.01rem solid #b5b5b5;
+	text-align: right;
+	font-size: 0.3rem;
+	color: black;
+	height: 0.82rem;
+	line-height: 0.82rem;
+	padding-right: 0.22rem;
+	background-color: white;
+	display: none;
+}
+#bottom var{
+	margin-left: 0.15rem;
+	color: #ffa264;
+	font-size: 0.34rem;
+}

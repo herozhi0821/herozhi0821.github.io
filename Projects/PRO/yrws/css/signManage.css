@@ -1,0 +1,92 @@
+
+		#wrap{
+			background-color: #f0efed;
+		}
+		#top{
+			width: 7.3rem;
+			height: 0.88rem;
+			background-color: #F8C5D3;
+			color: #FFFFFF;
+			padding: 0  0.2rem;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 999;
+		}
+		#top *{
+			float: left;
+		}
+		#prev{
+			margin-top: 0.25rem;
+			width: 0.28rem;
+			height: 0.38rem;
+			margin-right: 2.59rem;
+		}
+		#top_text{
+			font-size: 0.34rem;
+			line-height: 0.88rem;
+			margin-right: 2.5rem;
+		}
+		#content{
+			padding-top: 0.88rem;
+		}
+		.main_con{
+			height: 1.22rem;
+			margin-bottom: 0.12rem;
+			background-color: white;
+			overflow: hidden;
+			padding: 0.25rem 0.20rem 0 0.20rem;
+		}
+		.tel,.ch{
+			width: 0.52rem;
+			height: 0.52rem;
+		}
+		.img_info{
+			float: left;
+			width: 0.95rem;
+			height: 0.95rem;
+			background-image: url("../images/banner.png");
+			background-size: cover;
+			border-radius: 50%;
+			margin-right: 0.08rem;
+		}
+		.right_info{
+			margin-top: 0.12rem;
+			float: left;
+		}
+		.sex_info{
+			background-image: url("../images/sex.png");
+			width: 0.13rem;
+			height: 0.19rem;
+			margin-top: 0.09rem;
+			margin-right: 0.05rem;
+			background-size: cover;
+			float: left;
+		}
+		.name_info{
+			float: left;
+			font-size: 0.24rem;
+			color: #000000;
+		}
+		.credit_info{
+			margin-top: 0.45rem;
+			padding-left: 0.19rem;
+			font-size: 0.2rem;
+			color: #cecece;
+		}
+		.credit_info var{
+			padding-left: 0.09rem;
+		}
+		.rightBox{
+			margin-top: 0.17rem;
+			float: right;
+		}
+		.tel{
+			margin-right: 0.2rem;
+		}
+		.time_info{
+			text-align: right;
+			font-size: 0.18rem;
+			color: #cecece;
+			margin-top: 0.27rem;
+		}

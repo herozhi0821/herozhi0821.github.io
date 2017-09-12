@@ -1,0 +1,126 @@
+#wrap{
+	background-color: #f0efed;
+}
+#header{
+	width: 7.5rem;
+	height: 0.88rem;
+	background-color: #f9c8a7;
+	color: #FFFFFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	font-size: 0.34rem;
+	text-align: center;
+	line-height: 0.88rem;
+	overflow: hidden;
+}
+#header *{
+	float: left;
+}
+#header a {
+	width: 0.8rem;
+	height: 0.88rem;
+	position: absolute;
+	top: 0rem;
+	left:0rem;
+}
+#prev{
+	width: 0.28rem;
+	height: 0.38rem;
+	margin:0.25rem 0 0 0.2rem;
+}
+#content{
+	padding-top: 0.88rem;
+}
+h3{
+	height: 0.58rem;
+	font-size: 0.18rem;
+	line-height: 0.58rem;
+	color: #6d6d6d;
+	text-align: center;
+	background-color: #f0efed;
+}
+#banner{
+	width: 100%;
+	height: 2.4rem;
+}
+#content_info{
+	overflow: hidden;
+	padding-left: 0.24rem;
+	background-color: white;
+}
+#content_info li{
+	height: 1.6rem;
+	padding: 0.35rem 0.05rem;
+	position: relative;
+	width: 3.4rem;
+	float: left;
+	border-top: 1px solid #f0efed;
+}
+#content_info li:nth-child(1),#content_info li:nth-child(2){
+	border-top: none;
+}
+#content_info li:nth-child(odd){
+	border-right: 1px solid #f0efed;
+}
+#content_info li img{
+	height: 1.6rem;
+}
+#content_info li div{
+	position: absolute;
+	width: 1.82rem;
+	height: 1rem;
+	top: 50%;
+	margin-top: -0.5rem;
+	right: 0.05rem;
+}
+#content_info h1{
+	font-size: 0.24rem;
+	color: black;
+	margin-bottom: 0.2rem;
+}
+#content_info h2{
+	font-size: 0.24rem;
+	color: #f9c8a7;
+	overflow: hidden;
+}
+#content_info h2 *{
+	float: left;
+}
+#content_info h2 img{
+	width: 0.3rem;
+	height: 0.3rem;
+	margin-left: 0.17rem;
+}
+#content_tag{
+	height: 0.68rem;
+	background: #fff;
+	overflow: hidden;
+}
+#content_tag li {
+	float: left;
+	width: 3.75rem;
+	color: #000;
+	font-size: 0.2rem;
+	text-align: center;
+	line-height: 0.68rem;
+	/*text-indent : 1em;*/
+}
+#cerNum{
+	background: url(../images/money.png) 1rem 0.2rem no-repeat;
+	background-size: 0.3rem 0.3rem;
+}
+#cerNum var {
+	color:#f9c8a7 ;
+}
+#record{
+	background: url(../images/record.png) 0.9rem 0.2rem no-repeat;
+	background-size: 0.3rem 0.3rem;
+	overflow: hidden;
+}
+#record a {
+	width: 3.75rem;
+	height: 0.68rem;
+	float: left;
+}

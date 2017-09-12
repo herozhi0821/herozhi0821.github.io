@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>标题</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="../../css/reset.css">
+	<link rel="stylesheet" href="../../css/pub.css">
+	<link rel="stylesheet" href="../../css/myWallet.css">
+	<!-- <link rel="stylesheet" href="../css/main.css"> -->
+	<script type="text/javascript" src="../../js/suit.js"></script>
+	<script type="text/javascript" src="../../js/jquery-1.8.3.min.js"></script>
+	<style>
+		
+	</style>
+</head>
+<body>
+	<div id="header">
+		<a id="header_left" href="./oneselfMain.html">
+			<img id="prev" src="../../images/prev.png">
+		</a>			
+		我的钱包
+	</div>
+	<div id="above">
+		<div id="gold">
+			<img src="../../images/img矢量智能对象@2x.png" alt="">
+		</div>
+		<div id="money">
+			￥<span id="balance">0.00</span>
+		</div>
+	</div>
+	<div id="below">
+		<div id="explain">您的账户内如有款项则等同现金使用，余额达到5.00元可随时提现。您在活动中获得的红包会打入此账户。</div>
+		<div id="extract">
+			提现<button id="extract_but"></button>
+		</div>
+	</div>
+	<script>
+	var flag=4.99;
+	if (flag<5.00) {
+		$('#extract').css('background-color','#c9caca')
+	} else{
+		$('#extract').css('background-color','#07f840')
+	};
+	
+	</script>
+</body>
+</html>

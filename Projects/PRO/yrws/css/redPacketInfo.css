@@ -1,0 +1,403 @@
+#wrap{
+	background-color: #f0efed;
+}
+#masking{
+	position: fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index: 9888;
+	display: none;
+}
+#redPacket{
+	width:6.42rem;
+	height:8.34rem;
+	position: relative;
+	position: fixed;
+	left:7%;
+	top:1.31rem;
+	z-index: 9999;
+	background:url(../images/抢到钱弹窗720x1280_03.png) center center no-repeat;
+	background-size:6.42rem 8.34rem;
+	display: none;
+}
+#close{
+	width:0.32rem;
+	height:0.32rem;
+	position: absolute;
+	top:0.36rem;
+	left:0.36rem;
+}
+#logo{
+	width:1.54rem;
+	height:1.22rem;
+	position: absolute;
+	top:1.22rem;
+	left:2.4rem;
+}
+#logoName{
+	width:6.42rem;
+	font-size:0.18rem;
+	font-family: PingFang;
+	color:#FFE2B1;
+	margin-top:2.54rem;
+	text-align:center;
+}
+#having{
+	width:6.42rem;
+	margin-top: 1.26rem;
+	text-align:center;
+	font-family: PingFang;
+	color:#FFE2B1;
+	display:none;
+}
+#without{
+	width:6.42rem;
+	margin-top: 1.26rem;
+	text-align:center;
+	font-family: PingFang;
+	color:#FFE2B1;
+	font-size: 0.3rem;
+	display: block;
+}
+#amount{
+	font-size: 0.28rem;
+}
+#amount span{
+	font-size: 0.36rem;
+}
+#deposit{
+	font-size: 0.18rem;
+}
+#examine{
+	position: absolute;
+	left:2.45rem;
+	bottom:0.86rem;
+	text-align:center;
+	font-family: PingFang;
+	color:#FFE2B1;
+	font-size:0.2rem;
+}
+#header{
+	width: 7.5rem;
+	height: 0.88rem;
+	background-color: #ffbcbd;
+	color: #FFFFFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	font-size: 0.34rem;
+	text-align: center;
+	line-height: 0.88rem;
+	overflow: hidden;
+}
+#header *{
+	float: left;
+}
+#header #header_left {
+	width: 0.8rem;
+	height: 0.88rem;
+	position: absolute;
+	top: 0rem;
+	left:0rem;
+}
+#prev{
+	width: 0.28rem;
+	height: 0.38rem;
+	margin:0.25rem 0 0 0.2rem;
+}
+#content{
+	padding-top: 0.88rem;
+}
+#banner{
+	height: 4.15rem;
+	background-image: url("../images/banner.png");
+	background-size: cover;
+}
+#middle{
+	padding-left: 0.3rem;
+	padding-top: 0.2rem;
+	background-color: white;
+	height: 3.3rem;
+	position: relative;
+}
+#middle .controll{
+	/*position: absolute;
+	top: 0.2rem;
+	right: 0.2rem;*/
+}
+#middle h1{
+	font-size: 0.32rem;
+	color: #ff7375;
+}
+#middle h2{
+	margin-top: 0.45rem;
+	font-size: 0.24rem;
+	color: #656565;
+}
+#btn{
+	position: absolute;
+	bottom: 0.55rem;
+	left: 2.53rem;
+	width: 2.48rem;
+	height: 0.68rem;
+	border-radius: 0.08rem;
+	background-color: #ffbcbd;
+	color: white;
+	font-size: 0.36rem;
+	text-align: center;
+	line-height: 0.68rem;
+}
+.controll{
+	/*text-align: right;*/
+	float: right;
+}
+.controll img{
+	width: 0.24rem;
+	height: 0.24rem;
+}
+.controll .upvote{
+	margin-right: 0.25rem;
+}
+
+
+
+
+
+.pagination{
+	height: 0.43rem;
+	background-color: white;
+	padding-top: 0.07rem;
+}
+.myPagination{
+	height: 0.36rem;
+	font-size: 0.19rem;
+	width: 2.47rem;
+	line-height: 0.36rem;
+	float: left;
+	text-align: center;
+	border-right: 1px solid #f0efed;
+}
+
+.replyChild{
+	overflow: hidden;
+	padding: 0.17rem 0.21rem 0 0.42rem;
+}
+.rightBox{
+	float: left;
+	width: 5.42rem;
+	position: relative;
+	border-bottom: 1px solid #f0efed;
+}
+.user_info{
+	overflow: hidden;
+}
+.user_name{
+	font-size: 0.24rem;
+	color: #959594;
+	float: left;
+	margin-right: 0.08rem;
+}
+.sex{
+	margin-top: 0.03rem;
+	float: left;
+	width: 0.14rem;
+	height: 0.23rem;
+}
+
+
+
+
+
+
+
+.main_content{
+	margin-top: 0.23rem;
+	font-size: 0.24rem;
+	color: black;
+}
+.main_info{
+	/*position: absolute;
+	bottom: 0.18rem;
+	left: 0;*/
+	float: left;
+	font-size: 0.14rem;
+	color: #959594;
+	margin-top: 0.3rem;
+}
+
+#bottom{
+	height: 0.88rem;
+	position: fixed;
+	bottom: 0;
+	z-index: 999;
+	width: 100%;
+	background-color: white;
+	overflow: hidden;
+}
+#bottom *{
+	float: left;
+}
+#bottom #send{
+	font-size: 0.24rem;
+	background: #ffbcbd;
+	width: 1rem;
+	height: 0.5rem;
+	border-radius: 0.08rem;
+	margin-top: 0.2rem;
+	margin-left: 0.2rem;
+	text-align: center;
+	line-height: 0.5rem;
+	color:#fff;
+}
+#bottom #send2{
+	font-size: 0.24rem;
+	background: #ffbcbd;
+	width: 1rem;
+	height: 0.5rem;
+	border-radius: 0.08rem;
+	margin-top: 0.2rem;
+	margin-left: 0.2rem;
+	text-align: center;
+	line-height: 0.5rem;
+	color:#fff;
+}
+#replyText{
+	padding-left: 0.18rem;
+	width: 5rem;
+	height: 0.5rem;
+	border-radius: 0.08rem;
+	text-align: left;
+	margin-left: 0.32rem;
+	margin-top: 0.2rem;
+	font-size: 0.2rem;
+	color: #959594;
+	background-color: #f3f0ef;
+
+}
+#hint{
+	width: 4rem;
+	height: 0.6rem;
+	font-size: 0.24rem;
+	position: fixed;
+	left: 50%;
+	bottom: 1.13rem;
+	margin-left: -25%;
+	background: #000;
+	opacity: 0.5;
+	color: #fff;
+	text-align: center;
+	line-height: 0.6rem;
+	border-radius: 0.08rem;
+	display: none;
+	z-index: 99999;
+}
+#tip{
+	width: 0.32rem;
+	height: 0.42rem;
+	margin-top: 0.23rem;
+	margin-left: 0.2rem;
+}
+.onShow{
+	color: #ff9e9f;
+}
+/*@@@@@@@@@@@@@@@@@@@@@*/
+.huifus{
+	width: 5rem;
+	/*height: 1rem;*/
+	background: #eee;
+	position: relative;
+	border-radius: 0.08rem;
+	margin-top: 0.2rem;
+	/*display: none;*/
+	/*float: left;*/
+	z-index: 99999;
+}
+.huifus h1 {
+	font-size: 0.24rem;
+	/*float: left;*/
+	margin-left: 0.2rem;
+}
+.huifus p:nth-child(2){
+	font-size: 0.24rem;
+	position: absolute;
+	top: 0;
+	right:0.2rem;
+	z-index: 1;
+}
+.huifus p:nth-child(3){
+	font-size: 0.24rem;
+	margin-left: 0.2rem;
+	margin-top: 0.2rem;
+	margin-right: 0.2rem;
+	/*float: left;*/
+	text-align: justify;
+}
+
+.zan{
+	width: 5.42rem;
+	height: 0.5rem;
+	background: pink;
+	float: left;
+	margin-top: 0.09rem;
+	margin-bottom: 0.09rem;
+	display: none;
+}
+.zan span{
+	float: left;
+	font-size: 0.2rem;
+	line-height: 0.5rem;
+	margin-left: 0.1rem;
+}
+.zan .xiaoshou{
+	float: left;
+	width: 0.24rem;
+	height: 0.24rem;
+	margin-top: 0.13rem;
+	margin-left:0.13rem;
+}
+
+
+
+
+.mui-table-view .controll{
+	margin-top: 0.2rem;
+	margin-bottom: 0.18rem;
+}
+
+.replyImg{
+	width: 1.06rem;
+	height: 1.06rem;
+	float: left;
+	margin-right: 0.39rem;
+	border-radius: 50%;
+}
+.xiaotx{
+	background-size:1.06rem 1.06rem;
+	border-radius: 50%;
+	float: left;
+	width: 0.24rem;
+	height: 0.24rem;
+	margin-top: 0.13rem;
+	margin-left:-0.07rem;
+}
+
+.mui-scroll-wrapper{
+	position: absolute;
+	top:30px;
+	margin-bottom: 0.2rem;
+}
+.mui-scroll{
+	background-color: white;
+	width: 100%;
+	margin-top: 0.01rem;
+	margin-bottom: 0.88rem;
+}
+
+.swiper-container{
+	margin-top: 0.21rem;
+	position: relative;
+	height: 10rem;
+}

@@ -1,0 +1,148 @@
+#wrap{
+	background-color: #f0efed;
+}
+#header{
+	width: 7.5rem;
+	height: 0.88rem;
+	background-color: #94e5ec;
+	color: #FFFFFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	font-size: 0.34rem;
+	text-align: center;
+	line-height: 0.88rem;
+	overflow: hidden;
+}
+#header *{
+	float: left;
+}
+#header #header_left {
+	width: 0.8rem;
+	height: 0.88rem;
+	position: absolute;
+	top: 0rem;
+	left:0rem;
+}
+#header_right{
+	width: 0.8rem;
+	height: 0.88rem;
+	position: absolute;
+	top: 0rem;
+	right:0rem;
+}
+#yuyi{
+	width: 0.5rem;
+	height: 0.51rem;
+	margin:0.13rem 0.2rem 0 0;
+	float: right;
+}
+#prev{
+	width: 0.28rem;
+	height: 0.38rem;
+	margin:0.25rem 0 0 0.2rem;
+}
+
+#content{
+	padding-top: 0.88rem;
+}
+.banner{
+	background-image: url('../images/jingyu.png');
+	height: 2.4rem;
+	width: 100%;
+	background-size: cover;
+}
+.swiper-slide li{
+	margin-top: 0.12rem;
+	padding: 0.16rem 0.2rem 0.2rem 0.2rem;
+	background-color: white;
+
+}
+.user_info{
+	overflow: hidden;
+}
+.info_img{
+	width: 0.7rem;
+	height: 0.7rem;
+	border-radius: 50%;
+	background-color: gray;
+	float: left;
+	margin-right: 0.08rem;
+}
+.user_rightBox{
+	float: left;
+	margin-top: 0.08rem;
+}
+.sex_img{
+	width: 0.12rem;
+	height: 0.17rem;
+	margin-right: 0.07rem;
+}
+.user_name{
+	font-size: 0.18rem;
+	color: black;
+}
+.info_time{
+	color: #7c7c7c;
+	font-size: 0.15rem;
+	margin-left: 0.22rem;
+	margin-top: 0.08rem;
+}
+.content_info{
+	overflow: hidden;
+	margin-top: 0.25rem;
+	position: relative;
+}
+.content_img{
+	width: 1.94rem;
+	height: 1.94rem;
+	background-color: gray;
+	float: left;
+}
+.content_rightBox{
+	float: left;
+	margin-left: 0.25rem;
+}
+.content_rightBox h1{
+	font-size: 0.18rem;
+	color: black;
+}
+.content_rightBox h2{
+	font-size: 0.15rem;
+	color: #797979;
+	margin-top: 0.22rem;
+}
+.controll{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.upvote{
+	margin-right: 0.2rem;
+	width: 0.24rem;
+	height: 0.24rem;
+}
+.reply{
+	width: 0.24rem;
+	height: 0.24rem;
+}
+.pagination{
+	height: 0.64rem;
+	background-color: white;
+	overflow: hidden;
+}
+.myPagination{
+	float: left;
+	height: 0.5rem;
+	border-right: 0.02rem solid #f0efed;
+	width: 2.47rem;
+	margin-top: 0.07rem;
+	font-size: 0.23rem;
+	color: black;
+	line-height: 0.5rem;
+	text-align: center;
+}
+.onShow{
+	color: #94e5ec;
+}

@@ -1,0 +1,111 @@
+
+#wrap{
+	background-color: #F0F0ED;
+}
+#content{
+	padding-top: 0.88rem;
+}
+#top{
+	width: 7.3rem;
+	height: 0.88rem;
+	background-color: #F8C5D3;
+	color: #FFFFFF;
+	padding: 0 0.2rem;
+	padding-right: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+#content #type #AABOX,#content #type #MYBOX{
+	margin: 0;
+	float: left;
+}
+#content #type #AABOX{
+	margin-right: 1.1rem;
+}
+#content #type #MYBOX{
+	margin-right: 0.22rem;
+}
+#top *{
+	float: left;
+}
+#prev{
+	margin-top: 0.25rem;
+	width: 0.28rem;
+	height: 0.38rem;
+	margin-right: 2.59rem;
+}
+#top_text{
+	font-size: 0.34rem;
+	line-height: 0.88rem;
+	margin-right: 2.5rem;
+}
+.box{
+	padding-left: 0.2rem;
+	color: #868686;
+	font-size: 0.24rem;
+	line-height: 0.83rem;
+	height: 0.83rem;
+	background-color: white;
+	border-bottom: 2px #F0F0ED solid;
+}
+.child{
+	margin-top: -0.25rem;
+	margin-left: 0.3rem;
+	height: 0.7rem;
+	color: #313131;
+	font-size: 0.3rem;
+	line-height: 0.35rem;
+	width: 5.5rem;
+}
+#meetInfoBox{
+	margin-bottom: 1.34rem;
+}
+#addresBox{
+	background: url("../images/location_fen.png") 7rem center no-repeat;
+	background-size: 0.29rem 0.39rem;
+	background-color: white;
+}
+#costTypeBox{
+	overflow: hidden;
+}
+#costTypeBox h1{
+	font-size: 0.24rem;
+	color: #f87fa2;
+	font-weight: normal;
+}
+#type{
+	float: right;
+}
+#type *{
+	float: left;
+}
+#type div{
+	margin-right: 0.15rem;
+}
+.empty{
+	background-image: url("../images/radio_empty.png");
+	background-size: cover;
+	width: 0.28rem;
+	height: 0.28rem;
+	margin-top: 0.28rem;
+}
+.full{
+	background-image: url("../images/radio_full.png");
+	background-size: cover;
+	width: 0.28rem;
+	height: 0.37rem;
+	margin-top: 0.19rem;
+}
+#publishBTN{
+	font-size: 0.36rem;
+	color: white;
+	text-align: center;
+	width: 2.4rem;
+	height: 0.68rem;
+	line-height: 0.68rem;
+	background-color: #f8c3d2;
+	border-radius: 0.16rem;
+	margin: 0.9rem auto;
+}

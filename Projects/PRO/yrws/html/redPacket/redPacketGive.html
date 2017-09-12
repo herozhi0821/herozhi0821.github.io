@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>标题</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="../../css/reset.css">
+	<link rel="stylesheet" href="../../css/pub.css">
+	<link rel="stylesheet" href="../../css/redPacketGive.css">
+	<!-- <link rel="stylesheet" href="../css/main.css"> -->
+	<script type="text/javascript" src="../../js/suit.js"></script>
+	<script type="text/javascript" src="../../js/jquery-1.8.3.min.js"></script>
+
+</head>
+<body>
+	<div id="header">
+		<a id="header_left" href="./redPacketMain.html">
+			<img id="prev" src="../../images/prev.png">
+		</a>			
+		发红包
+	</div>
+	<div id="title">
+		<span>标题</span>
+		<input type="text" placeholder="输入标题，最多不超过50字" name="" value="" id="title_ipt">
+	</div>
+	<div id="Introductions">
+		<span>说明</span>
+		<textarea name="" id="textarea" cols="30" rows="10" placeholder="请填写抢红活动的简介"></textarea>
+	
+		<div id="picture">
+			<div class="add">
+				<input type="file" class="file_input" capture="photo" multiple/>
+                <div class="rrr"></div>
+			</div>
+			<span>最多添加9张图片</span>
+		</div>
+	</div>
+	<div id="start">
+		<span>抢红包开始时间</span>
+        <div align="center" class="startTime">
+            <form name="form1" method="post" action="">
+                <select name="hour">
+                </select>:
+                <select name="minute">
+                </select>
+            </form>
+        </div>
+        <div align="center" class="startDate">
+            <form name="form1" method="post" action="">
+                <select name="year">
+                </select>-
+                <select name="month">
+                </select>-
+                <select name="day">
+                </select>
+            </form>
+        </div>
+	</div>
+	<div id="over">
+		<span>抢红包结束时间</span>
+        <div align="center" class="startTime">
+            <form name="form1" method="post" action="">
+                <select name="hour">
+                </select>:
+                <select name="minute">
+                </select>
+            </form>
+        </div>
+        <div align="center" class="startDate">
+            <form name="form1" method="post" action="">
+                <select name="year">
+                </select>-
+                <select name="month">
+                </select>-
+                <select name="day">
+                </select>
+            </form>
+        </div>
+	</div>
+	<div id="pay">
+		<div id="money">
+			<span class="je">金额</span>
+			<span class="fh">
+				￥<input type="text" name="" value="0.00">
+			</span>
+		</div>
+		<div id="payMoney">
+			<button id="but">支付</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="../../js/Calender.js"></script>
+	<script type="text/javascript" src="../../js/redPacketGive.js"></script>
+<script>
+	
+</script>
+</body>
+</html>

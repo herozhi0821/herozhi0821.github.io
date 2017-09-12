@@ -1,0 +1,95 @@
+#wrap{
+	background-color: #f0efed;
+}
+#header{
+	width: 7.5rem;
+	height: 0.88rem;
+	background-color: #e8d3ed;
+	color: #FFFFFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	font-size: 0.34rem;
+	text-align: center;
+	line-height: 0.88rem;
+	overflow: hidden;
+}
+#header *{
+	float: left;
+}
+#header #header_left {
+	width: 0.8rem;
+	height: 0.88rem;
+	position: absolute;
+	top: 0rem;
+	left:0rem;
+}
+#prev{
+	width: 0.28rem;
+	height: 0.38rem;
+	margin:0.25rem 0 0 0.2rem;
+}
+#content{
+	padding-top: 0.88rem;
+	background-color: #f0efed;
+	position: relative;
+}
+#title{
+	height: 0.78rem;
+	font-size: 0.28rem;
+	color: #c1c1c1;
+	padding-left: 0.2rem;
+	display: block;
+	width: 7.29rem;
+	margin-bottom: 0.12rem;
+}
+#content_text{
+	display: block;
+	resize: none;
+	height: 4.55rem;
+	padding: 0.1rem 0.2rem;
+	color: #c1c1c1;
+	font-size: 0.28rem;
+	width: 7.09rem;
+}
+#content_bottom{
+	position: absolute;
+	bottom: 0.2rem;
+	left: 0.1rem;
+	overflow: hidden;
+}
+#content_bottom *{
+	float: left;
+}
+.bitmap{
+	background: url('../images/bitmap.png') no-repeat;
+	background-size: cover;
+	width: 1.86rem;
+	height: 1.86rem;
+}
+.user_up_img{
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 1.86rem;
+	height: 1.86rem;
+	margin-right: 0.05rem;
+}
+.bottom_text{
+	margin-top: 1.5rem;
+	margin-left: 0.35rem;
+	font-size: 0.2rem;
+	color: #c1c1c1;
+}
+#publishBTN{
+	width: 2.4rem;
+	height: 0.68rem;
+	margin: 0 auto;
+	margin-top: 0.9rem;
+	background-color: #e7d2ec;
+	font-size: 0.36rem;
+	color: white;
+	border-radius: 0.1rem;
+	text-align: center;
+	line-height: 0.68rem;
+}

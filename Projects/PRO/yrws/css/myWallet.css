@@ -1,0 +1,84 @@
+#header{
+	width: 7.5rem;
+	height: 0.88rem;
+	background-color: #f9c8a7;
+	color: #FFFFFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	font-size: 0.34rem;
+	text-align: center;
+	line-height: 0.88rem;
+	overflow: hidden;
+}
+#header *{
+	float: left;
+}
+#header #header_left {
+	width: 0.8rem;
+	height: 0.88rem;
+	position: absolute;
+	top: 0rem;
+	left:0rem;
+}
+#prev{
+	width: 0.28rem;
+	height: 0.38rem;
+	margin:0.25rem 0 0 0.2rem;
+}
+#above{
+	width:100%;
+	margin-top:0.88rem;
+	float: left;
+	border-bottom:0.01rem #edece9 solid;
+}
+#gold{
+	width:1.16rem;
+	height:1.18rem;
+	margin:1.02rem auto;
+	margin-bottom: 0;
+}
+#gold img{
+	width:1.16rem;
+	height:1.18rem;
+}
+#money{
+	width:100%;
+	margin:0.62rem auto;
+	margin-bottom:0.76rem;
+	text-align: center;
+	font-size:0.6rem;
+	font-family: PingFang;
+	color:#000;
+}
+#below{
+	width:100%;
+	float: left;
+}
+#explain{
+	margin: 0.3rem 0.21rem;
+	font-size: 0.2rem;
+	font-family: PingFang;
+
+}
+#extract{
+	width:3.7rem;
+	height:0.76rem;
+	margin:1.22rem auto;
+	font-size: 0.3rem;
+	font-family: PingFang;
+	background-color: #c9caca;
+	border-radius:0.2rem;
+	position: relative;
+	line-height: 0.76rem;
+	text-align: center;
+}
+#extract_but{
+	width:3.7rem;
+	height:0.76rem;
+	position: absolute;
+	left:0;
+	top:0;
+	display: none;
+}

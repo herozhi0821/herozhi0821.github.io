@@ -1,0 +1,195 @@
+#header{
+	width: 7.5rem;
+	height: 0.88rem;
+	background-color: #f9c8a7;
+	color: #FFFFFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	font-size: 0.34rem;
+	text-align: center;
+	line-height: 0.88rem;
+	overflow: hidden;
+}
+#header *{
+	float: left;
+}
+#header #header_left {
+	width: 0.8rem;
+	height: 0.88rem;
+	position: absolute;
+	top: 0rem;
+	left:0rem;
+}
+#prev{
+	width: 0.28rem;
+	height: 0.38rem;
+	margin:0.25rem 0 0 0.2rem;
+}
+#title{
+	width:100%;
+	height:1.01rem;
+	border-bottom: 0.01rem #bfbfbf solid;
+	margin-top: 0.88rem;
+	padding-left:0.26rem;
+	font-size:0.24rem;
+	font-family:PingFang;
+	color:#c9c9c9;
+}
+#title span{
+	font-size:0.28rem;
+	font-family:PingFang;
+	color:#797979;
+}
+#title #title_ipt{
+	width:3.25rem;
+	margin-left: 0.76rem;
+	margin-top: 0.42rem;
+	font-size: 0.24rem;
+	font-family: PingFang;
+	color:#797979;
+}
+#Introductions{
+	width:100%;
+	/* height:2.83rem; */
+	padding-left:0.26rem;
+	font-size:0.24rem;
+	font-family:PingFang;
+	color:#c9c9c9;
+	border-bottom: 0.01px #bfbfbf solid;
+	float: left;
+}
+#Introductions span{
+	font-size:0.28rem;
+	font-family:PingFang;
+	color:#797979;
+	margin-top: 0.42rem;
+	float: left;
+}
+#Introductions #textarea{
+	width:5.3rem;
+	height:2.5rem;
+	margin-left: 0.76rem;
+	margin-top: 0.42rem;
+	font-size: 0.24rem;
+	font-family: PingFang;
+	color:#797979;
+}
+#picture{
+	width:100%;
+	float: left;
+	margin-bottom: 0.21rem;
+}
+#picture .add{
+	width:1.1rem;
+	height:1.1rem;
+	float: left;
+	margin-left: 0.21rem;
+	margin-top: 0.21rem;
+	border:0.01rem #797979 solid;
+	background-image: url(../images/add2.png);
+	background-size:1.09rem 1.09rem;
+	position: relative;
+}
+.add .file_input{
+	width:1.1rem;
+	height:1.1rem;
+	position: absolute;
+	left:0.01rem;
+	top:0.01rem;
+	opacity:0;
+	z-index: 999;
+}
+.add .rrr{
+	width:1.1rem;
+	height:1.1rem;
+	position: absolute;
+	left:0.01rem;
+	top:0.01rem;
+}
+.add .rrr img{
+	width:1.1rem;
+	height:1.1rem;
+}
+#picture span{
+	float: left;
+	margin-top: 0.99rem;
+	font-size: 0.24rem;
+	font-family: PingFang;
+	color:#e4e4e4;
+	margin-left: 0.1rem;
+}
+#start{
+	width:100%;
+	height:1.01rem;
+	float: left;
+	border-bottom: 0.01px #bfbfbf solid;
+	/* margin-top: 0.88rem; */
+	padding-left:0.26rem;
+	font-size:0.28rem;
+	font-family:PingFang;
+	color:#000000;
+	line-height: 1.01rem;
+}
+#start .startDate{
+	float: right;
+	font-size: 0.28rem;
+	font-family:PingFang;
+	color:#F88690;
+}
+#start .startTime{
+	float: right;
+	font-size: 0.28rem;
+	font-family:PingFang;
+	color:#F88690;
+	margin-right: 0.2rem;
+}
+#over{
+	width:100%;
+	height:1.01rem;
+	float: left;
+	border-bottom: 0.01px #bfbfbf solid;
+	/* margin-top: 0.88rem; */
+	padding-left:0.26rem;
+	font-size:0.28rem;
+	font-family:PingFang;
+	color:#000000;
+	line-height: 1.01rem;
+}
+#over .startDate{
+	float: right;
+	font-size: 0.28rem;
+	font-family:PingFang;
+	color:#F88690;
+}
+#over .startTime{
+	float: right;
+	font-size: 0.28rem;
+	font-family:PingFang;
+	color:#F88690;
+	margin-right: 0.2rem;
+}
+#money{
+	float: left;
+	margin-top:0.88rem;
+	font-size:0.28rem;
+	font-family:PingFang;
+	color:#000000;
+	margin-left:43%;
+}
+#money .fh{
+	color:#FC0000;
+}
+#but{
+	width:2.42rem;
+	height:0.68rem;
+	background-color: red;
+	border-radius:0.2rem;
+	float: left;
+	margin-top:0.7rem;
+	font-size:0.36rem;
+	font-family:PingFang;
+	color:#fff;
+	margin-left:36%;
+}

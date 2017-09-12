@@ -1,0 +1,155 @@
+body{
+	background-color: #F0F0ED;
+}
+#header{
+	width: 7.5rem;
+	height: 0.88rem;
+	background-color: #F75F5D;
+	color: #FFFFFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	font-size: 0.34rem;
+	text-align: center;
+	line-height: 0.88rem;
+	overflow: hidden;
+}
+#header *{
+	float: left;
+}
+#header #header_left {
+	width: 0.8rem;
+	height: 0.88rem;
+	position: absolute;
+	top: 0rem;
+	left:0rem;
+}
+#prev{
+	width: 0.28rem;
+	height: 0.38rem;
+	margin:0.25rem 0 0 0.2rem;
+}
+#con{
+	width:6.8rem;
+	margin:1.2rem auto;
+	margin-bottom: 0;
+}
+#superior{
+	height:4.01rem;
+	width:100%;
+	background-image: url(../images/手气榜720x1280_03.png);
+	background-size:100% 100%;
+	border-bottom:0.01rem #bfbfbf solid;
+}
+#general{
+	width:100%;
+	background: url(../images/手气榜720x1280_09.png) 100% 100% repeat;
+}
+#second{
+	width:1.34rem;
+	height:2.39rem;
+	float: left;
+	margin-top: 0.75rem;
+	margin-left: 0.14rem;
+	position: relative;
+}
+#superior .headPortrait{
+	width:1.34rem;
+	height:1.34rem;
+}
+#superior .name{
+	margin-top: 0.18rem;
+	text-align: center;
+}
+#superior .name img{
+	width:0.13rem;
+	height:0.18rem;
+}
+#superior .name span{
+	font-size: 0.18rem;
+	font-family: PingFang;
+	color:#000000;
+
+}
+#superior .money{
+	margin-top: 0.09rem;
+	text-align: center;
+	color:#F9E5AE;
+	font-size: 0.18rem;
+}
+#superior .like{
+	width:1.15rem;
+	margin: 0.1rem auto;
+	/* padding:0 0.05rem; */
+	font-size: 0.2rem;
+	font-family: PingFang;
+	color:#ffffff;
+	background-color: #f24048;
+	border-radius:0.06rem 0.06rem;
+	text-align: center;
+}
+#superior .medal{
+	width:0.29rem;
+	height:0.41rem;
+	position: absolute;
+	top:0.98rem;
+	left:0.82rem;
+
+}
+#first{
+	width:1.34rem;
+	height:2.39rem;
+	float: left;
+	margin-top: 0.22rem;
+	margin-left: 1.25rem;
+	position: relative;
+}
+#third{
+	width:1.34rem;
+	height:2.39rem;
+	float: right;
+	margin-top: 0.75rem;
+	margin-right: 0.14rem;
+	position: relative;
+}
+#general li{
+	width:100%;
+	height:1.46rem;
+	border-bottom:0.01rem #bfbfbf solid;
+	/* line-height:1.46rem; */
+}
+#general .tx{
+	float: left;
+	width:0.96rem;
+	height:0.97rem;
+	margin-left:0.25rem;
+	margin-top:0.26rem;
+}
+#general .wm{
+	float: left;
+	margin-left: 0.2rem;
+	margin-top: 0.63rem;
+	font-size: 0.2rem;
+	font-family: PingFang;
+}
+#general .dz{
+	float: right;
+	margin-right:0.27rem;
+	margin-top: 0.63rem;
+	color:#F8ACB1;
+	font-size: 0.18rem;
+	font-family: PingFang;
+}
+#general .dz img{
+	width:0.24rem;
+	height:0.24rem;
+}
+#general .je{
+	float: right;
+	margin-right:0.27rem;
+	margin-top: 0.63rem;
+	color:#fac66f;
+	font-size: 0.18rem;
+	font-family: PingFang;
+}

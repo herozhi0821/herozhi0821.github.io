@@ -1,0 +1,494 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>粤人无数</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+
+	<link rel="stylesheet" href="../../css/reset.css">
+	<link rel="stylesheet" href="../../css/pub.css">
+	<link rel="stylesheet" href="../../css/trystInfo.css">
+	<script type="text/javascript" src="../../js/suit.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+			<a id="header_left" href="./trystMain.html"><img id="prev" src="../../images/prev.png"></img></a>			
+			非诚勿扰
+		</div>
+		<div id="content">
+			<div id="content_user">
+				<div id="user_info">
+					<div id="user_img"></div>
+					<div id="user_rightBox">
+						<img src="../../images/sex.png" id="info_sex">
+						<span id="user_name">我的名字</span>
+					</div>
+					<div id="user_main_info"><em>未选择地区</em> |<var>1</var>小时前</div>
+				</div>
+				<h1>北京真是一个美丽的</h1>
+				<h2>北京北京北京北京北京北京北京北京北京</h2>
+				<img src="../../images/banner.png" id="banner">
+				<div class="controll">
+					<img my="0" total="1" class="upvote" src="../../images/upvote.png">
+					<label for="replyText">
+						<img class="reply" src="../../images/reply.png">
+					</label>
+				</div>
+				<div id="followBTN">关注TA</div>
+			</div>
+			<div class="swiper-container">
+				<ul class="pagination">
+					<li class="swiper-pagination-custom myPagination onShow" id="bReply">评论（<var>1</var>）</li>
+					<li class="swiper-pagination-custom myPagination" id="bUpvote">点赞（<var>1</var>）</li>
+					<li class="swiper-pagination-custom myPagination" id="bRedPack">打赏（<var>1</var>）</li>
+				</ul>
+				<div id="pullrefresh" class="mui-scroll-wrapper"> 
+					<div class="mui-scroll"> 
+						<!--数据列表-->				   
+						      <!-- 具体内容 -->
+			     	 <ul class="mui-table-view graphic_ul message_ul"> 
+						<li id="reply1" class="replyChild">
+							<!-- <div ></div> -->
+							<img class="replyImg" src="../../images/u=2225728396,4156654611&fm=26&gp=0.jpg" alt="">
+							<div class="rightBox">
+								<div class="user_info">
+									<span class="user_name">我的名字1</span>
+									<img src="../../images/girl.png" class="sex">
+								</div>
+								<div class="main_content">我就喜欢看这个12</div>
+								<div class="huifus">
+									
+								</div>
+								<div class="main_info"><var>1</var>楼·<var>1</var>小时前</div>
+								<div class="controll">
+
+											<!--my=赞的值  total=人数  ！！！！！！-->
+									<img my="0" total="1" class="upvote" src="../../images/upvote.png" alt="">
+									<label for="replyText">
+										<img class="reply" src="../../images/reply.png" alt="">
+									</label>
+								</div>
+								<div class="zan">
+									<img class="xiaoshou" src="../../images/xiaoshou.png" alt="">
+									<span class="count">1人</span>
+								</div>
+							</div>							
+						</li>						
+					</ul>					
+				</div>
+			</div>
+			</div>
+			<div id="hint">内容不能为空，你是不是傻</div>
+			<div id="bottom">
+				<input id="replyText" class="texta" type="text" value="" placeholder="发表评论" >
+				<div id="send">发送</div>
+				<img src="../../images/tip.png" id="tip">
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../../js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../../js/mui.min.js" ></script>
+	<script>
+		var prev=document.getElementById('prev');
+		prev.addEventListener('touchend',function(){
+			self.location='../html/chatMain.html';
+		})
+
+		var gz=0
+
+		$("#followBTN").on("tap",function (){
+			if (gz == 0) {
+				$(this).css({
+					"border":"0.02rem solid red",
+					"color":"red"
+				});
+				$(this).html("已关注TA");
+				gz=1;
+			}else if(gz == 1){
+				$(this).css({
+					"border":"0.02rem solid #e7d2ec",
+					"color":"#e7d2ec"
+				});
+				$(this).html("关注TA");
+				gz=0;
+			}
+		})
+
+	</script>
+	<script type="text/javascript" charset="utf-8">	
+		//下拉刷新 上拉加载 
+			mui.init({ 
+				pullRefresh: { 
+					container: '#pullrefresh', 
+					down:{ 
+						height:50,
+					    contentdown : "下拉意义很深哦",
+					    contentover : "释放皮卡丘",
+					    contentrefresh : "正在刷新...",
+						callback: pulldownRefresh
+					},
+					up:{ 
+						contentdown : "上拉加载更多",	
+						contentrefresh: '加载中...',
+						callback: pullupRefresh 
+					} 
+				} 
+			}); 			 
+			/*下拉刷新*/ 
+			function pulldownRefresh() { 
+				setTimeout(function() { 
+					var table = document.body.querySelector('.mui-table-view');//获取ul标签 
+					var cells = document.body.querySelectorAll('.mui-media');//循环获取所有的Nodelist li标签 
+					// for (var i = cells.length, len = i + 2; i < len; i++) { 
+						table.innerHTML="";
+						// var li = document.createElement('li');//创建一个新的节点 
+						// // li.className = 'mui-media'; 
+						// li.setAttribute("id","reply1");
+						// li.className="replyChild";
+						
+						var sexs;
+						mui.ajax('shuju.json',{
+									data:{
+										username:'username',
+										password:'password'
+									},
+									dataType:'json',//服务器返回json格式数据
+									type:'post',//HTTP请求类型
+									timeout:10000,//超时时间设置为10秒；
+									headers:{'Content-Type':'application/json'},	
+									async:false,              
+									success:function(data){		
+										// 服务器返回响应，根据响应结果，分析是否登录成功；
+										sexs = 0;
+										alert("对了");
+                           					for(var i = 0; i < data.lists.length; i++){
+							                table.innerHTML +=`<li id="reply1" class="replyChild">
+							                <img class="replyImg" src="../../images/u=2225728396,4156654611&fm=26&gp=0.jpg" alt="">
+							<div class="rightBox">
+								<div class="user_info">
+									<span class="user_name">${data.lists[i].nema}</span>
+									<img src="../../images/girl.png" class="sex">				
+								</div>
+								<div class="main_content">${data.lists[i].title}</div>
+								<div class="huifus">
+									
+								</div>
+								<div class="main_info"><var>${data.lists[i].lou}</var>楼·<var>1</var>小时前</div>
+								<div class="controll">
+									<img my="0" total="1" class="upvote" src="../../images/upvote.png" alt="">
+									<label for="replyText">
+										<img class="reply" src="../../images/reply.png" alt="">
+									</label>
+								</div>
+								<div class="zan">
+									<img class="xiaoshou" src="../../images/xiaoshou.png" alt="">
+									<span class="count">1人</span>
+								</div>
+							</div>	
+							</li>`
+
+							                    // table.insertBefore(li, table.firstChild); 
+							                    //判断性别 后台返回0是 女 返回1是 男
+							                    if (sexs == 0 ) {							
+													$(".sex").attr("src","../../images/girl.png");
+												}else if(sexs == 1){
+													$(".sex").attr("src","../../images/sex.png");
+												};
+							            	};
+							            
+									},
+
+									error:function(xhr,type,errorThrown){
+										//异常处理；
+										console.log(type);
+									}
+
+								});
+					// } 
+					mui('#pullrefresh').pullRefresh().endPulldownToRefresh(); 
+				}, 500); 
+			}
+				
+			
+			 
+			/*上拉加载*/  
+			var count = 0;//数据的总条数
+			function pullupRefresh() { 
+				setTimeout(function() { 
+					mui('#pullrefresh').pullRefresh().endPullupToRefresh((++count > 5));  
+					console.log(1);
+					var table = document.body.querySelector('.mui-table-view'); 
+					var cells = document.body.querySelectorAll('.mui-media'); 
+					for (var i = cells.length, len = i + 3; i < len; i++) {
+						var li = document.createElement('li'); 
+						// li.className = 'mui-media'; 
+						li.setAttribute("id","reply1");
+						li.className="replyChild";
+						li.innerHTML = `<img class="replyImg" src="../../images/u=2225728396,4156654611&fm=26&gp=0.jpg" alt="">
+							<div class="rightBox">
+								<div class="user_info">
+									<span class="user_name">我的名字1</span>
+									<img src="../../images/girl.png" class="sex">
+								</div>
+								<div class="main_content">我就喜欢看这个1</div>
+								
+								<div class="main_info"><var>1</var>楼·<var>1</var>小时前</div>
+								<div class="controll">
+									<img my="0" total="0" class="upvote" src="../../images/upvote.png" alt="">
+									<label for="replyText">
+										<img class="reply" src="../../images/reply.png" alt="">
+									</label>
+								</div>
+								<div class="zan">
+									<img class="xiaoshou" src="../../images/xiaoshou.png" alt="">
+									<span class="count">1人</span>
+								</div>
+							</div>`;
+						table.appendChild(li); 
+					} 
+				}, 500); 
+			} 
+			if (mui.os.plus) { 
+				mui.plusReady(function() { 
+					setTimeout(function() { 
+						mui('#pullrefresh').pullRefresh().pullupLoading();//重新开启上拉加载 
+					}, 1000); 
+				}); 
+			}else{ 
+				mui.ready(function() { 
+					mui('#pullrefresh').pullRefresh().pullupLoading();//重新开启上拉加载 
+				}); 
+			} 
+		</script>
+	<script>	
+	var wrapper = document.getElementsByClassName('mui-scroll')[0];
+	var ul1 = wrapper.children[0];
+	console.log(ul1);
+	var replyText = document.getElementById('replyText');
+	var send = document.getElementById('send');
+	var send2 = document.getElementById('send2');
+	var hint = document.getElementById('hint');
+	console.log(replyText.getAttribute("id"));
+	
+	
+	
+	var lou = 1;
+	//这里是做判断  如果评论里面有赞值1以上 就会显示 0 则不显示
+	var upvote = document.getElementsByClassName("upvote");		
+	for (var i = 0; i < upvote.length; i++) {		
+		var total=parseInt(upvote[i].getAttribute("total"));
+		console.log(total);
+		if (total == 0 ) {
+			$(".zan").css("display","none");
+		}else{
+			$(".zan").css("display","block");
+		};
+
+	};
+	
+		//整体的点赞！！！！！！！！！！！！
+		$("#content_user").on("tap",function (e){
+			//获取当前点击事件
+			var e=e||window.event;
+			var el=e.srcElement;
+			if(!el){
+				el=e.target;//兼容火狐
+			}	
+			if (el.className  == "upvote") {
+				var my = $(".upvote").attr("my");
+				var total = $(".upvote").attr("total");
+				var z = parseInt( total);
+				console.log(typeof z);
+				if (my == 0) {
+					$("#content_user .upvote").attr("src","../../images/btnshou.png");
+					$(".upvote").attr("my","1");
+					var newtotal = z+1;
+					$(".upvote").attr("total",newtotal);
+					$("#bUpvote var").html(newtotal);
+				}else if(my == 1){
+					$("#content_user .upvote").attr("src","../../images/upvote.png")					
+					$(".upvote").attr("my","0");
+					var newtotal = z-1;
+					$(".upvote").attr("total",newtotal);
+					$("#bUpvote var").html(newtotal);
+				};
+			};
+		})
+
+		//用event来确定点击的是那个li里面的 类名
+		$(".mui-table-view").on("tap",function (e){		
+			//获取当前点击事件
+			var e=e||window.event;
+			var el=e.srcElement;
+			if(!el){
+				el=e.target;//兼容火狐
+			}	
+			//回复事件
+			if (el.className  == "reply") {
+				var ss= el.parentNode.parentNode.parentNode;				
+				var dd = ss.getElementsByClassName("user_name")[0];
+				var louhao = ss.getElementsByClassName("main_info")[0].children[0];
+				var beforecon = ss.getElementsByClassName("main_content")[0];
+				console.log(beforecon);
+				replyText.value = "回复 "+dd.innerHTML+"：";
+				replyText.focus();
+				var q = 0;
+					send.onclick=function (){
+						if (q == 0 ) {
+							alert(1);
+							if (replyText.value != "") {
+								huifu(dd,louhao,beforecon);
+								q=1;
+							}else{
+								hint.style.display="block";
+								a=setTimeout(function (){
+									hint.style.display="none";
+								},3000);			
+							};
+						}else{
+							alert(2);
+							if (replyText.value != "") {
+								pinglun();
+							}else{
+								hint.style.display="block";
+								a=setTimeout(function (){
+									hint.style.display="none";
+								},3000);			
+							};
+						}
+					}				
+			}	
+			//回复的回复事件
+			if (el.className  == "huifus"||el.className  == "hf1"||el.className  == "hf2"||el.className  == "hf3") {
+				// alert(111111111111);
+				var ss= el.parentNode.parentNode.parentNode;				
+				var dd = ss.getElementsByClassName("user_name")[0];
+				var louhao = ss.getElementsByClassName("main_info")[0].children[0];
+				var beforecon = ss.getElementsByClassName("main_content")[0];
+				console.log(beforecon);
+				replyText.value = "回复 "+dd.innerHTML+"：";
+				replyText.focus();
+				var q = 0;
+					send.onclick=function (){
+						if (q == 0 ) {
+							alert(1);
+							if (replyText.value != "") {
+								huifu(dd,louhao,beforecon);
+								q=1;
+							}else{
+								hint.style.display="block";
+								a=setTimeout(function (){
+									hint.style.display="none";
+								},3000);			
+							};
+						}else{
+							alert(2);
+							if (replyText.value != "") {
+								pinglun();
+							}else{
+								hint.style.display="block";
+								a=setTimeout(function (){
+									hint.style.display="none";
+								},3000);			
+							};
+						}
+					}
+			}
+
+			//点赞事件！！！！！！
+			if (el.className  == "upvote") {
+				var my=parseInt(el.getAttribute("my"));
+				var total=parseInt(el.getAttribute("total"));
+				// alert(my);
+				var newtotal;
+				//获取li里的div
+				var counts = el.parentNode.parentNode;
+				var count = counts.getElementsByClassName("count")[0];
+				var zan = counts.getElementsByClassName('zan')[0];
+				//获取li里全部内容
+				var quan = el.parentNode.parentNode.parentNode;
+				var txs = quan.getElementsByClassName("replyImg")[0];
+
+				
+				if (my == 0 ) {
+					//我点了赞总数量就要+1
+					el.src="../../images/btnshou.png";
+					zan.style.display="block";					
+					newtotal=total+1;
+					//更新total值
+					el.setAttribute("total",newtotal);
+					//更新my值
+					el.setAttribute("my",1);
+					//更新文字  就是我点了后 文字就是取消赞了
+					count.innerHTML=newtotal+" 人";
+					tx = document.createElement("img");
+					tx.className= "xiaotx";
+					// var bg = getComputedStyle(txs.null).width;
+					// var wid =   getComputedStyle(txs,null).background;
+					var wid =  txs.getAttribute("src");
+					// console.log(wid.slice(5,wid.length-1));
+					console.log(wid);
+					tx.src=wid;
+					zan.insertBefore(tx,count);
+
+
+				}else{
+					//反之-1
+					el.src="../../images/upvote.png";
+					newtotal=total-1;
+					el.setAttribute("total",newtotal);
+					el.setAttribute("my",0);
+					count.innerHTML=newtotal+" 人";
+					if (newtotal == 0 ) {
+						zan.style.display="none";						
+					};
+					zan.removeChild(tx);
+				};
+				
+			};
+		})
+
+		//普通直接点击input评论事件
+		send.onclick=function (){
+			if (replyText.value != "") {				
+					pinglun();
+			}else{
+				hint.style.display="block";
+				a=setTimeout(function (){
+					hint.style.display="none";
+				},3000);			
+			};
+		}	
+
+	
+
+
+	function huifu(dd,louhao,beforecon){
+		var lis = document.createElement("li");
+		lis.setAttribute("id","reply1");
+		lis.className="replyChild";
+		lis.innerHTML='<img class="replyImg" src="../../images/u=2225728396,4156654611&fm=26&gp=0.jpg" alt=""><div class="rightBox"><div class="user_info"><span class="user_name">我的名字</span><img src="../../images/girl.png" class="sex"></div><div class="main_content">'+beforecon.innerHTML+'</div><div class="huifus"><h1 class="hf1">回复：'+dd.innerHTML+'</h1><p class="hf2">'+louhao.innerHTML+'楼</p><p class="hf3">'+replyText.value+'</p></div><div class="main_info"><var>'+lou++ +'</var>楼·<var>1</var>小时前</div><div class="controll"><img my="0" total="0" class="upvote" src="../../images/upvote.png" alt=""><label for="replyText"><img class="reply" src="../../images/reply.png" alt=""></label></div><div class="zan"><img class="xiaoshou" src="../../images/xiaoshou.png" alt=""><span class="count">1人</span></div></div>';
+		ul1.appendChild(lis);
+		ul1.insertBefore(lis,ul1.firstChild);
+		replyText.value="";
+	}
+	function pinglun(){
+		console.log("我是评论！！！！");
+		var lis = document.createElement("li");
+		lis.setAttribute("id","reply1");
+		lis.className="replyChild";
+		lis.innerHTML='<img class="replyImg" src="../../images/u=2225728396,4156654611&fm=26&gp=0.jpg" alt=""><div class="rightBox"><div class="user_info"><span class="user_name">我的名字</span><img src="../../images/girl.png" class="sex"></div><div class="main_content">'+replyText.value+'</div><div class="main_info"><var>'+lou++ +'</var>楼·<var>1</var>小时前</div><div class="controll"><img my="0" total="0" class="upvote" src="../../images/upvote.png" alt=""><label for="replyText"><img class="reply" src="../../images/reply.png" alt=""></label></div><div class="zan"><img class="xiaoshou" src="../../images/xiaoshou.png" alt=""><span class="count">1人</span></div></div>';
+		ul1.appendChild(lis);
+		ul1.insertBefore(lis,ul1.firstChild);
+		replyText.value="";
+	} 
+
+
+
+	</script>
+</body>
+</html>

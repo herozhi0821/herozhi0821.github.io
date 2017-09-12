@@ -1,0 +1,134 @@
+
+#wrap{
+	background-color: #FFFFFF;
+}
+#banner{
+	background-image: url("../images/banner.png");
+	background-size: cover;
+	width: 7.5rem;
+	height: 4.62rem;
+	padding-top: 0.22rem;
+	margin-bottom: 0.28rem;
+}
+#location{
+	float: left;
+	margin-left: 0.24rem;
+	padding-top: 0.06rem;;
+}
+#loc{
+	float: left;
+	width: 0.20rem;
+	height: 0.27rem;
+	margin-right: 0.12rem;
+}
+#address{
+	float: left;
+	margin-right: 1.08rem;
+	font-size: 0.22rem;
+	color:#4f3d0e;
+	margin-top: -0.03rem;
+}
+#search{
+	float: left;
+	width: 3.68rem;
+	height: 0.4rem;
+	border-radius: 0.2rem;
+	background-color: #d9d9d9;
+	font-size: 0.22rem;
+	background-size: 0.29rem 0.33rem;
+	padding-top: 0.035rem;
+	padding-left: 0.4rem;
+}
+#magImg{
+	float: left;
+	width: 0.29rem;
+	height: 0.33rem;
+}
+#srchText{
+	float: left;
+	background-color: #d9d9d9;
+	width: 3rem;
+	font-size: 0.22rem;
+	color: #8e7f65;
+}
+#clientList{
+	width: 7.06rem;
+	overflow: hidden;
+	margin: 0 auto;
+}
+#clientList li{
+	padding: 0.5rem 0.58rem 0.46rem 0.58rem;
+	float: left;
+	margin-bottom: 0.32rem;
+	overflow: hidden;
+}
+#clientList li:nth-child(2n){
+	margin-left: 0.22rem;
+}
+#common{
+	background-color: #F8C5D1;
+}
+#common a{
+	background-color: #f9d0db;
+}
+#chat{
+	background-color: #93E5EC;
+}
+#chat a{
+	background-color: #a8ebef;
+}
+#market{
+	background-color: #F8c9a8;
+}
+#market a{
+	background-color: #fad4ba;
+}
+#redPacket{
+	background-color: #ffbcbc;
+}
+#redPacket a{
+	background-color: #fecac7;
+}
+#share{
+	background-color: #bcecd1;
+}
+#share a{
+	background-color: #A3F0D9;
+}
+#tryst{
+	background-color: #e8d3ed;
+}
+#tryst a{
+	background-color: #EBDCF0;
+}
+
+
+
+#clientList li a{
+	width: 2.26rem;
+	height: 1.12rem;
+	color: #FFFFFD;
+	font-size: 0.4rem;
+	line-height: 1.12rem;
+	text-align: center;
+	letter-spacing: 0.1rem;
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
