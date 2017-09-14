@@ -74,6 +74,10 @@ NOTE: This is main stylesheet of the template.
     text-align: center;
     z-index: 99;
 }
+#logoimg{
+  height:37px;
+  width:80px;
+}
 .color_panel_box {
   margin-top: 20px;
   padding: 0 12px;
