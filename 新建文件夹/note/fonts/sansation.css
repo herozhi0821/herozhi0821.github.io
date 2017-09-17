@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Sansation';
+    src: url('Sansation_Regular-webfont.eot');
+    src: url('Sansation_Regular-webfont.eot?iefix') format('eot'),
+         url('Sansation_Regular-webfont.woff') format('woff'),
+         url('Sansation_Regular-webfont.ttf') format('truetype'),
+         url('Sansation_Regular-webfont.svg#webfontS2K4V4Bt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
